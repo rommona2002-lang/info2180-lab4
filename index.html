@@ -1,15 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>INFO2180 Lab 4 — Superheroes</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INFO2180 Lab 4 - Superheroes</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="container">
-    <h1>Superhero Lookup</h1>
-    <button id="search-btn" type="button">Search</button>
+  <header>
+    <h1>Avengers Character Search</h1>
+  </header>
+
+  <main>
+    
+    <div class="search-container">
+      <label for="query">Search by Full Name or Alias:</label><br />
+      <input
+        id="query"
+        type="text"
+        placeholder="e.g. Captain America or Steve Rogers"
+        aria-label="Search by full name or alias"
+      />
+      <button id="search-btn" type="button">Search</button>
+    </div>
+
+
+    <div class="result-section">
+      <h2>Result</h2>
+      <div id="result" aria-live="polite"></div>
+      <hr />
+    </div>
   </main>
+
   <script src="app.js"></script>
 </body>
 </html>
+
